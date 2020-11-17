@@ -1,0 +1,34 @@
+body nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 120px;
+  background-color: #4056A1;
+  color: #FFFF;
+  padding: 1.5em; 
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+}
+
+nav span {
+  font-family: 'Bungee';
+}
+
+.newTweet {
+  display: flex;
+  flex-direction: column;
+}
+
+nav p {
+  font-size: 20px;
+  margin: 0;
+}
+
+nav i {
+  color: red;
+  margin-left: 50%;
+  margin-top: 3px;
+}
+
