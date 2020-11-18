@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("#tweet-text").keyup(function() {
+  $("#tweet-text").on("keyup change input", function() {
     // update counter 
     let counter = $(this).parent().children(".tweetAndcount").children(".counter")
     counter.text(140 - $(this).val().length); 
@@ -10,6 +10,6 @@ $(document).ready(function() {
     if ((counter.val()) > 0) {
       counter.removeClass("error");
     }
-  });
+  }); 
 });
 
