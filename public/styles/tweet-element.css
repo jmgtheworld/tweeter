@@ -62,7 +62,7 @@
 
 .footerImages {
   display: flex;
-  font-size: 15px;
+  font-size: 16px;
   color: #4056A1;
   margin-right: 20px;
 }
@@ -71,15 +71,21 @@
   padding: 5px;
 }
 
+.footerImages i:hover {
+  color: red;
+  cursor: pointer;
+}
+
 .tweetContent {
-  border-style: none none solid none;
   border-style: none none solid none;
   background-color: #f4f1ec;
   border-width: 4px;
   width: 600px;
+  height: auto;
+  overflow: hidden;
   font-size: 20px;
-  height: 40px;
-  margin-bottom: 0px;
+  margin-bottom: 2px;
+  padding-bottom: 5px;
   padding-left: 25px;
 }
 

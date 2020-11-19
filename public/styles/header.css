@@ -3,7 +3,6 @@
   width: 100%;
   display: flex;
   justify-content: center;
-
   background-color: #DDE8FB;
   background-image: url("/images/transparent.png");
 }
@@ -16,9 +15,26 @@
   align-items: center;
 }
 
-.profile img{
-  border-radius: 30px;
-  width: 300px;
-  height: 200px;
+.profile img {
+  border-radius: 50%;
+  width: 200px;
+  height: 180px;
+}
+
+.profileID {
+  margin-top: 10px;
+}
+
+
+/* Desktop styles */
+@media only screen and (min-width: 1024px) {
+  .profileHeader {
+    height: 400px;
+    min-width: 30%;
+    margin: 40px 0px 0px 30px;
+    justify-content: center;
+    background-color: #DDE8FB;
+    background-image: url("/images/transparent.png");
+  }
 }
 

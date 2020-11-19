@@ -14,6 +14,7 @@ body nav {
 
 nav span {
   font-family: 'Bungee';
+  font-size: 30px;
 }
 
 .newTweet {
@@ -33,6 +34,7 @@ nav i {
 }
 
 .newTweet:hover{
-  cursor: pointer;
+  cursor: pointer;  
+  font-size: 30px;
 }
 
