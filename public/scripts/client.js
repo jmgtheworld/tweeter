@@ -109,6 +109,7 @@ $(document).ready(() => {
         loadTweets();
         $('.validation-error').css("display", "none");
         $('#tweet-text').val("");
+        $('.counter').val("140");
       })
     }
   });
