@@ -10,6 +10,10 @@
   padding: 10px;
 }
 
+.show{
+  display:flex;
+}
+
 #tweet-text {
   border-style: none none solid none;
   background-color: #f4f1ec;
@@ -77,5 +81,17 @@ button:hover {
   margin: 0px;
   padding: 0px;
 }
+
+#movetoTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  margin-left: 80%;
+  background-color: #f4f1ec;
+  border-style: none;
+  color: red;
+  font-size: 75px;
+}
+
 
 

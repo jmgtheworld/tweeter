@@ -33,14 +33,14 @@
       <span>tweeter</span>
       <div class = 'newTweet'> 
       <p><bold>Write</bold> a new tweet</p>
-      <i class="fas fa-angle-double-down"></i>
+        <i class="fas fa-angle-double-down"></i>
       </div>
     </nav>
 
     <header class = 'profileHeader'>
       <div class = 'profile'>
       <div>
-          <img src="/images/profile-hex.png"> 
+          <img src="/images/david.jpg"> 
       </div>
       <br>
       <div>
@@ -51,7 +51,7 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <section class="new-tweet">
+      <section class="new-tweet" onclick="myFunction()">
         <h2 class = "compose">Compose Tweet</h2>
         <div class = "validation-error">
           <i class="fas fa-exclamation-circle"></i>
@@ -69,6 +69,8 @@
       <section id = "allTweets"> </section>
   
       </section>
+
     </main>
+    <button id = "movetoTop"> <i class="fas fa-chevron-circle-up"></i> </button>
   </body>
 </html>

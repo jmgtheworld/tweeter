@@ -78,6 +78,7 @@ $(document).ready(() => {
       return $tweet;
     }
 
+
     const escape =  function(str) {
       let div = document.createElement('div');
       div.appendChild(document.createTextNode(str));
@@ -110,6 +111,30 @@ $(document).ready(() => {
         $('#tweet-text').val("");
       })
     }
+  });
+
+  $('.newTweet').on('click', event => {
+    $('.form').toggle();
+    $('#tweet-text').focus();
+  });
+
+  // when user scroll downs 30px from the top, show the button
+  let mybutton = document.getElementById("movetoTop");
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // Scroll to top of page when button is clicked
+  $('#movetoTop').on('click', event => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    $('.form').slideDown();
+    $('#tweet-text').focus();
   });
 
   const loadTweets = () => {
