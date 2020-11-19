@@ -13,8 +13,8 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Screenshots
 
-!["Screenshot of tweet app in desktop layout"]("https://github.com/jmgtheworld/tweeter/blob/master/docs/desktop-layout.png?raw=true")
-!["Screenshot of tweet app in tablet layout with warning message"]("https://github.com/jmgtheworld/tweeter/blob/master/docs/tablet-layout.png?raw=true")
+!["Screenshot of tweet app in desktop layout"](https://github.com/jmgtheworld/tweeter/blob/master/docs/desktop-layout.png?raw=true)
+!["Screenshot of tweet app in tablet layout with warning message"](https://github.com/jmgtheworld/tweeter/blob/master/docs/tablet-layout.png?raw=true)
 
 ## Dependencies
 
