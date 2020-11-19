@@ -1,6 +1,12 @@
+.compose {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .form {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   padding: 10px;
 }
 
@@ -49,5 +55,27 @@ button:hover {
   color: red;
 }
 
+.validation-error{
+  border-style: solid;
+  border-width: 3px;
+  padding: 20px;
+  border-color: red;
+  display: none;
+}
+
+.validation-error i {
+  display: inline-block;
+  color: red;
+  margin: 0px 5px 0px 5px;
+}  
+
+#error-message{
+  display: inline-block;
+  flex-direction: row;
+  font-size: 24px;
+  color: red;
+  margin: 0px;
+  padding: 0px;
+}
 
 

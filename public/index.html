@@ -52,9 +52,13 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <h2>Compose Tweet</h2>
-
-        <form class = "form" action = "/tweets/" method = "POST">
+        <h2 class = "compose">Compose Tweet</h2>
+        <div class = "validation-error">
+          <i class="fas fa-exclamation-circle"></i>
+          <p id = "error-message"></p>
+          <i class="fas fa-exclamation-circle"></i>
+        </div>
+        <form class = "form" action = "/tweets" method = "POST">
           <label for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
           <div class = "tweetAndcount">
@@ -62,51 +66,8 @@
             <output name="counter" class="counter" for="tweet-text"> 140 </output>
           </div>
         </form>
-
-        <article class = "tweetContainer">
-
-          <header class = "tweetHeader">
-            <div class = "userInfo">
-            <img src="/images/Dwight-Shrute.png"> 
-            <h4 class = "userName"> Dwight Schrute </h4> 
-            </div>
-            <h5 class = "userID"> @BeetFarmer </h5>
-          </header>
-          <p class="tweetContent"> I am the regional manager! </p>
-          <footer class = "tweetFooter">
-            <h6 class = "footerDate"> 10 days ago </h6> 
-            <div class = "footerImages">
-              <i class="fas fa-flag"></i>
-              <i class="fas fa-retweet"></i>
-              <i class="fas fa-heart"></i>
-            </div>
-          </footer>
-
-        </article>
-
-        <article class = "tweetContainer">
-
-          <header class = "tweetHeader">
-            <div class = "userInfo">
-            <img src="/images/stanley.jpg"> 
-            <h4 class = "userName"> Stanley Hudson </h4> 
-            </div>
-            <h5 class = "userID"> @PretzelDay </h5>
-          </header>
-          <p class="tweetContent"> Did I stutter? </p>
-          <footer class = "tweetFooter">
-            <h6 class = "footerDate"> 12 days ago </h6> 
-            <div class = "footerImages">
-              <i class="fas fa-flag"></i>
-              <i class="fas fa-retweet"></i>
-              <i class="fas fa-heart"></i>
-            </div>
-          </footer>
-          
-        </article>
-
-
-
+      <section id = "allTweets"> </section>
+  
       </section>
     </main>
   </body>
