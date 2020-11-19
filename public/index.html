@@ -33,45 +33,46 @@
     <nav>
       <span>tweeter</span>
       <div class = 'newTweet'> 
-      <p><bold>Write</bold> a new tweet</p>
+        <p> <bold>Write</bold> a new tweet </p>
         <i class="fas fa-angle-double-down"></i>
       </div>
     </nav>
+    <!-- Profile Content -->
     <div class = "mainContent">
-    <header class = 'profileHeader'>
-      <div class = 'profile'>
-      <div>
-          <img src="/images/david.jpg"> 
-      </div>
-      <br>
-      <div>
-          <h2 class = "profileID"> jmgtheworld </h2>
-      </div>
-    </div>
-    </header>
-
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <section class="new-tweet">
-        <h2 class = "compose">Compose Tweet</h2>
-        <div class = "validation-error">
-          <i class="fas fa-exclamation-circle"></i>
-          <p id = "error-message"></p>
-          <i class="fas fa-exclamation-circle"></i>
-        </div>
-        <form class = "form" action = "/tweets" method = "POST">
-          <label for="tweet-text">What are you humming about?</label>
-          <textarea name="text" id="tweet-text"></textarea>
-          <div class = "tweetAndcount">
-            <button type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text"> 140 </output>
+      <header class = 'profileHeader'>
+        <div class = 'profile'>
+          <div>
+              <img src="/images/david.jpg"> 
           </div>
-        </form>
-        <section id = "allTweets"> </section>
-      </section>
+          <br>
+          <div>
+              <h2 class = "profileID"> jmgtheworld </h2>
+          </div>
+        </div>
+      </header>
 
-    </main>
-    <button id = "movetoTop"> <i class="fas fa-chevron-circle-up"></i> </button>
-  </div>
+      <!-- Page-specific (main) content here -->
+      <main class="container">
+        <section class="new-tweet">
+          <h2 class = "compose">Compose Tweet</h2>
+          <div class = "validation-error">
+            <i class="fas fa-exclamation-circle"></i>
+            <p id = "error-message"></p>
+            <i class="fas fa-exclamation-circle"></i>
+          </div>
+          <form class = "form" action = "/tweets" method = "POST">
+            <label for="tweet-text">What are you humming about?</label>
+            <textarea name="text" id="tweet-text"></textarea>
+            <div class = "tweetAndcount">
+              <button type="submit">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text"> 140 </output>
+            </div>
+          </form>
+          <section id = "allTweets"> </section>
+        </section>
+        </main>
+        
+        <button id = "movetoTop"> <i class="fas fa-chevron-circle-up"></i> </button>
+    </div>
   </body>
 </html>
