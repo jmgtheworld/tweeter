@@ -34,11 +34,19 @@ html {
 
 .container {
   display: flex;
+  margin-top: 6px;
   margin-left: 10%;
   margin-right: 10%;
   flex-direction: column;
   align-items: center;
   background-color: #f4f1ec;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 420px) {
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 
@@ -48,4 +56,5 @@ html {
     display: flex;
     flex-direction: row;
   }
+
 }

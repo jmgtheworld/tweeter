@@ -1,19 +1,20 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
-
 $(document).ready( () => {
-  const renderTweets = function(tweets) {
+
+  const renderTweets = tweets => {
     // loops through tweets
     // calls createTweetElement for each tweet
     // takes return value and appends it to the tweets container
-        for (let tweet of tweets) {
-          $("#allTweets").prepend($(createTweetElement(tweet)).hide().fadeIn(300));
-        }
+    for (let tweet of tweets) {
+      $("#allTweets").prepend($(createTweetElement(tweet)).hide().fadeIn(300));
     }
-    
+  }
+
+  const escape = str => {
+    let div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  }
+
   const createTweetElement = tweet => {
     const today = Date.now();
     const postDate = tweet.created_at;
@@ -42,12 +43,7 @@ $(document).ready( () => {
     return $tweet;
     }
 
-  const escape = str => {
-    let div = document.createElement('div');
-    div.appendChild(document.createTextNode(str));
-    return div.innerHTML;
-  }
-  
+
   $('form').on('submit', event => {
     event.preventDefault();
 
