@@ -11,7 +11,6 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 10px;
 }
 
 .show{
@@ -26,6 +25,8 @@
   width: 100%;
   resize: none;
   font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 8px;
   height: 40px;
 }
 
