@@ -20,6 +20,27 @@ nav span {
 .newTweet {
   display: flex;
   flex-direction: column;
+
+}
+
+.newTweet i {
+  animation: bounce 2000ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  cursor: pointer;
+  margin-top: 18px;
+  height: 20px;
+  transform: rotate(0deg);
+  transform-origin: 0% 0%;
+}
+
+.newTweet i:after {
+  transform: rotate(-90deg);
+  transform-origin: 0% 100%;
+}
+
+@keyframes bounce {
+  50% {
+      transform: translateY(-10px);
+    }
 }
 
 nav p {
@@ -35,6 +56,5 @@ nav i {
 
 .newTweet:hover{
   cursor: pointer;  
-  font-size: 30px;
 }
 
