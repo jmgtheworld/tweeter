@@ -52,8 +52,7 @@ $(document).ready( () => {
       message = "Message shouldn't be empty!";
       document.getElementById("error-message").innerHTML = message;
       $(".validation-error").slideDown(300);
-    } 
-    if (input.length > 140) {
+    } else if (input.length > 140) {
       message = "Too long. Please keep your tweet to 140 Characters!";
       document.getElementById("error-message").innerHTML = message;
       $(".validation-error").slideDown(300);
